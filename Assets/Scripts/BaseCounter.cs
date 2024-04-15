@@ -10,7 +10,11 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent
 
     public virtual void Interact(Player player)
     {
-        Debug.Log("error");
+        Debug.LogError("error");
+    }
+    public virtual void InteractAlternate(Player player)
+    {
+        Debug.LogError("error Alt");
     }
 
     public Transform GetKitchenObjectFollowTransform()
